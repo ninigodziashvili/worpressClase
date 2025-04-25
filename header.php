@@ -8,14 +8,14 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
+<?php wp_body_open();?>
 <header>
   <nav>
-    <ul>
+<!--     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
-    </ul>
+    </ul> -->
   </nav>
 </header>

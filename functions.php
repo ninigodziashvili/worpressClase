@@ -5,10 +5,9 @@
 function mi_tema_enqueue_styles() {
     wp_enqueue_style(
         'estilos-principales',
-        get_stylesheet_directory_uri() . '/assets/CSS/style.css'
+        get_stylesheet_directory_uri() . '/style.css'
     );
 }
-
 add_action('wp_enqueue_scripts', 'mi_tema_enqueue_styles');
 
 // Añadir JS archivo global
@@ -35,3 +34,13 @@ function mi_tema_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'your_conditional_scripts');
+
+// Menu Nevegacion
+
+function mi_tema_menu() {
+    register_nav_menus(
+        array('mi-menu' => __('Mi menu'))
+    );
+}
+
+add_action('init', 'mi_tema_menu');
