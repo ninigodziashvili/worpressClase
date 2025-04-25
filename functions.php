@@ -1,0 +1,37 @@
+<?php
+
+// Añadir style
+
+function mi_tema_enqueue_styles() {
+    wp_enqueue_style(
+        'estilos-principales',
+        get_stylesheet_directory_uri() . '/assets/CSS/style.css'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'mi_tema_enqueue_styles');
+
+// Añadir JS archivo global
+
+function mi_tema_scripts() {
+    wp_enqueue_script(
+    'main-js',
+    get_template_directory_uri() . '/assets/js/script.js',
+    array(),
+    null,
+    true 
+    );
+   }
+
+   add_action('wp_enqueue_scripts', 'mi_tema_scripts');
+  
+   // Añadir JS archivo para patata
+
+   function your_conditional_scripts() {
+    if (is_page('plantilla-de-patata')) {
+        wp_register_script('patata.js', get_template_directory_uri() . '/assets/js/patata.js', array(), null, true);
+        wp_enqueue_script('patata.js');
+    }
+}
+
+add_action('wp_enqueue_scripts', 'your_conditional_scripts');

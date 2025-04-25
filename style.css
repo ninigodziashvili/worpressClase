@@ -1,0 +1,23 @@
+/*
+Theme Name: Ejercicios
+Theme URI: https://www.ejemplo.com
+Author: Nino
+Author URI: https://www.tusitio.com
+Description: pagina personal
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: portfolio
+*/
+/* Aquí puedes comenzar a escribir tus estilos CSS */
+
+body {
+    background-color: #1e375c;
+    font-family: "Lato";
+    color: white;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
