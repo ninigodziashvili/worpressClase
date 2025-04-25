@@ -37,10 +37,22 @@ add_action('wp_enqueue_scripts', 'your_conditional_scripts');
 
 // Menu Nevegacion
 
-function mi_tema_menu() {
+/* function mi_tema_menu() {
     register_nav_menus(
         array('mi-menu' => __('Mi menu'))
     );
 }
 
 add_action('init', 'mi_tema_menu');
+ */
+
+ function mi_tema_menu_en_body_open() {
+    wp_nav_menu(array(
+        'theme_location' => 'mi-menu',
+        'container' => 'nav',
+        'container_class' => 'menu-desde-body-open',
+        'menu_class' => 'mi-menu-clase'
+    ));
+}
+add_action('wp_body_open', 'mi_tema_menu_en_body_open');
+ 
