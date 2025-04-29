@@ -1,1 +1,1 @@
-console.log("Hola equipo")
+console.log("Hola equipo esta no es archivo para Global")

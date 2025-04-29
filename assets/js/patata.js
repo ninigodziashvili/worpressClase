@@ -1,1 +1,0 @@
-console.log("esta JS archivo es para Patata.php")

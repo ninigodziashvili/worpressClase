@@ -1,3 +1,0 @@
-<section id="work">
-    
-</section>
