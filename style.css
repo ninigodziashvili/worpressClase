@@ -17,7 +17,7 @@ body {
     color: white;
 }
 
-@font-face {
-    font-family: "Lato";
-    src: url("../fonts/Lato-Regular.ttf");
+.mi-menu-clase {
+    display: flex;
+    color: blueviolet;
 }

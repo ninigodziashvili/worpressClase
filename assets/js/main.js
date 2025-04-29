@@ -1,0 +1,1 @@
+console.log("esta JS archivo es para Global")
