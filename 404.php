@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 <main>
-    <h2>Index Page</h2>
+    <h2>esta pagina es para errores</h2>
 </main>
 <?php get_footer(); ?>
